@@ -1,0 +1,49 @@
+
+// 配置主题颜色
+
+@title_color: #000; 				// 标题颜色
+@text_color: #666; 					// 文本颜色
+@descript_color: #666; 			// 描述颜色
+
+
+
+
+// 底部背景颜色
+@footer_color: #666;
+
+
+
+
+
+
+
+
+
+
+
+html,body{
+	overflow-x: hidden;
+}
+a{text-decoration: none;}
+li{list-style: none;}
+
+
+
+
+
+// 单行超出隐藏
+.ell{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+
+//背景渐变 @start  渐变开始颜色  @end  结束颜色
+
+.jianbian(@start :#00ffff,@end :#9fffff){
+    background:-webkit-gradient(linear,0 0, 0 100%,from(@start),to(@end));
+    background:-moz-linear-gradient(top,@start ,@end);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=@start ,
+                endColorstr=@end ,grandientType=0);
+}
